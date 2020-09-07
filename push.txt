@@ -1,0 +1,27 @@
+\\PUSH IT\\
+cd C:\Users\Asus\Documents\NemesisNode\client
+npm run build
+Xcopy /E /I "C:\Users\Asus\Documents\NemesisNode\client\build" "C:\Users\Asus\Documents\NemesisNode\server\build"
+cd ..
+cd server
+npm start \\not mandatoryn
+\\ go to http://localhost:3000/ to verify if working
+cd ..
+cd server
+cd
+heroku git:remote -a nemesis-intelligence
+Xcopy /E /I C:\Users\Asus\Documents\NemesisNode C:\Users\Asus\Documents\nemesis-intelligence
+cd..
+cd nemesis-intelligence
+
+// NEW VERSION ONLY DO THIS
+
+heroku login
+cd client
+npm run build
+cd ..
+git add . 
+git commit -am "blabla"
+git push heroku master
+
+#git push --force heroku master (if its not working)
