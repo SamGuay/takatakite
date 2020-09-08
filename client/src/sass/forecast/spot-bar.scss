@@ -1,0 +1,202 @@
+.spot-bar-bottom {
+    border: 1px solid #eaeff5;
+    border-bottom-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    p{
+        margin:0;
+        margin-left:10px;
+        font-size: 0.9rem;
+        
+    }
+    .wind-specs {
+        background-color:#00bbd6;
+        max-height: 1.3rem;
+        padding-right:5px;
+        padding-left:5px;
+        border-radius: 6px;
+        color: white;
+        i{
+        
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+    
+}
+.windSpeedSpecs {
+    border-radius: 4px;
+    padding-right:6px;
+    padding-left:6px;
+    color:white;
+    font-size: 0.8rem;
+    font-weight:500;
+    max-height: 1.3rem;
+    margin-left:2px;
+    
+
+}
+
+
+
+}
+.spot-bar-top {
+    background-color:rgb(216, 61, 87);
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px; 
+    p{
+        margin:0;
+        margin-left:10px;
+        line-height: 1.7;
+        color:white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        
+    }
+}
+.stars {
+    color:rgb(255,215,0);
+    font-size:1.3rem;
+    text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.6);
+    
+}
+
+.starsWhite {
+    color:rgba(255,255,255,0.5);
+    font-size:1.3rem;
+    
+    
+}
+.ranking {
+    padding-top:3px;
+    padding-right:5px;
+}
+.datePicker {
+    background-color:rgb(255,255,255);
+    padding:5px 15px;
+    border:1px solid rgb(230,230,230);
+    border-radius:0px 5px 5px 0px;
+    @media (max-width: 600px){
+        border-radius:0px 0px 5px 5px;
+    }
+        
+    
+
+}
+.map-bar {
+    position: relative;
+    z-index: 1000;
+    top:-135px;
+    left:-100px;
+    width:200px;
+    max-height: 128px;
+    min-height: 128px;
+}
+
+
+.map-bar-bottom {
+    background-color: white;
+    min-height: 102px;
+    border: 1px solid #eaeff5;
+    border-bottom-left-radius: 6px; 
+    border-bottom-right-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    p{
+        margin:0;
+        margin-left:10px;
+        font-size: 0.9rem;
+        
+    }
+    .wind-specs {
+        background-color:#00bbd6;
+        max-height: 1.3rem;
+        padding-right:5px;
+        padding-left:5px;
+        border-radius: 6px;
+        color: white;
+        i{
+        
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+    
+}
+.windSpeedSpecs {
+    border-radius: 4px;
+    padding-right:6px;
+    padding-left:6px;
+    color:white;
+    font-size: 0.8rem;
+    font-weight:500;
+    max-height: 1.3rem;
+    margin-left:2px;
+    }
+}
+
+
+.map-bar-top {
+    max-height: 26.6px;
+    background-color:rgb(216, 61, 87);
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px; 
+    p{
+        margin:0;
+        margin-left:5px;
+        line-height: 1.7;
+        color:white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        max-width: 127px;
+        
+    }
+    i {
+        max-height:26.6px;
+    }
+}
+.map-bar:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 7px white;
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+}
+
+
+.hiddenName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    @media screen and (max-width: 600px){
+        max-width: 450px;
+    }
+
+
+    @media screen and (max-width: 500px){
+        max-width: 350px;
+    }
+    @media screen and (max-width: 450px){
+        max-width: 300px;
+    }
+
+    @media screen and (max-width: 400px){
+        max-width: 250px;
+    }
+    @media screen and (max-width: 350px){
+        max-width: 200px;
+    }
+
+    @media screen and (max-width: 300px){
+        max-width: 100px;
+    }
+    
+}

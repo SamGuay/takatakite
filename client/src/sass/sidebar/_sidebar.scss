@@ -1,0 +1,83 @@
+.readmin-sidebar {
+  position: relative;
+  
+  .menudivider {
+    padding: $padding-base 0;
+  }
+
+  .menu-drawer {
+    > div {
+
+      padding-top: $padding-base * 5;
+      overflow-y: hidden;
+    }
+
+
+    &.has-bg {
+      
+      div > div {
+        overflow-y: hidden;
+      }
+      .nav-menu {
+        a, div, svg, i {
+          color: $font-color-white !important;
+          opacity: .97;
+          
+        }
+        i {
+          opacity: .7;
+        }
+        .childmenu {
+          .active {
+            .childmenu & {
+              background: rgba($font-color-base, .3) !important;
+            }
+          }
+        }
+        .active {
+          background: rgba($font-color-base, .3) !important;
+        }
+        .menudivider hr {
+          background-color: $font-color-white !important;
+          opacity: .3;
+        }
+      }
+    }
+  }
+
+
+  .an-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 256px;
+    z-index: 1400;
+    background-color: #00bbd6 ;
+    background: #00bbd6;
+    @include transition();
+    &.menu-close {
+    }
+
+    @media (max-width: 520px) {
+      width: auto;
+      
+
+    }
+
+    .brand {
+      @media (max-width: 520px) {
+        font-size: $font-size-base;
+        margin-right: $margin-large;
+        padding:0 15px ;
+      }
+    }
+
+  }
+}
+
+
+.sidebar-initial-color {
+  background-color: #1b202a;
+  
+}
+

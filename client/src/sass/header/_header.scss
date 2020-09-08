@@ -1,0 +1,105 @@
+
+.an-header  {
+  position: fixed;
+  width: 100%;
+  left: 0;
+ 
+  top: 0;
+  background: $white;
+  z-index: 1300;
+  
+  //border-bottom: 1px solid $color-primary;
+  @include flex-space-between();
+  justify-content: flex-end;
+  @include an-box-shadow();
+  height: 65px;
+  padding: 0px 10px 0px 10px;
+  @media (max-width: 520px) {
+    .brand {font-size: $font-size-h4 *1 !important;}
+    z-index: 1400;
+    .an-header {
+      
+     
+    }
+  }
+
+  .brand {
+    position: relative;
+    color: $font-color-white;
+    font-size: $font-size-h4 *1;
+    font-family: $font-family-gochi;
+    img {
+      width: 130px;
+    }
+  }
+
+  .header-right {
+
+    @include flex-center();
+    > a {
+      margin: 0 $margin-small 0 $margin-base;
+    }
+    button {
+      padding: 0 !important;
+    }
+    @media (max-width: 520px) {
+      button {right:15px}
+    }
+    @media (max-width: 310px) {
+      button {right:-10px}
+    }
+  }
+
+  .header-left {
+    position: relative;
+    left:-80px;
+    @media (max-width: 521px) {
+      left  :0px;
+      padding-right:16px;
+    }
+    @include flex-center();
+    .brand {
+      margin-left:0px;
+      
+    }
+
+  }
+
+}
+
+.menubtn {
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+
+  i {
+
+    @include transition();
+  }
+
+  &:hover {
+    i {
+      color: white;
+    }
+  }
+}
+
+
+
+.material-icons {
+  color: #d83d57;
+}
+
+
+.an-circle-icon-btn {
+  height: 40px;
+  width: 40px;
+  
+}
+#menu-unique > i {
+  color:white;
+  
+  cursor: pointer;
+  padding: 0 10px;}
+  
