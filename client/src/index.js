@@ -7,19 +7,7 @@ import allReducers from './reducers';
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import { PersistGate } from 'redux-persist/integration/react'
-import * as firebase from 'firebase'
 import thunk from 'redux-thunk';
-
-var config = {
-  apiKey: "AIzaSyC7dRUYy2vVHknCsRy4L0rB5Zd7GC4sLyY",
-  authDomain: "takatakite-9b6cc.firebaseapp.com",
-  databaseURL: "https://takatakite-9b6cc.firebaseio.com",
-  projectId: "takatakite-9b6cc",
-  storageBucket: "takatakite-9b6cc.appspot.com",
-  messagingSenderId: "536092681569"
-};
-firebase.initializeApp(config);
-
 
 const persistConfig = {
   key: 'root',

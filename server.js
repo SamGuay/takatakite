@@ -5,6 +5,7 @@ const app = express();
 const dotenv= require('dotenv');
 const mail = require("./routes/api/mail");
 const blogs = require("./routes/api/blogs");
+const forecastApi = require("./routes/api/forecastApi");
 const path= require('path')
 const sslRedirect = require('heroku-ssl-redirect');
 require('dotenv').config();
@@ -18,6 +19,8 @@ app.use(
 app.use(bodyParser.json());
 // DB Config
 const db =  process.env.MONGODB_URI;
+
+
 
 // Connect to MongoDB
 mongoose
@@ -35,7 +38,8 @@ mongoose.set('useFindAndModify', false);
 // Routes
 
 app.use("/api/mail", mail);
-app.use("/api/blogs", blogs );
+app.use("/api/blogs", blogs);
+app.use("/api/forecastApi", forecastApi);
 
 
 //Serve static assets if in production

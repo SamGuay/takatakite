@@ -1,5 +1,5 @@
 import React from 'react';
-import takata from '../img/takatalogo12copy1.png'
+import takata from '../img/takatalogo12copy1.png';
 
 const Footer = () => (
   <footer className="" style={{marginTop:'60px'}}>
